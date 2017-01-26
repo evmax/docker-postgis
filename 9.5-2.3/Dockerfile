@@ -13,4 +13,4 @@ RUN apt-get update \
       && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /docker-entrypoint-initdb.d
-
+COPY ./init-test-db.sh /docker-entrypoint-initdb.d/init-test-db.sh
