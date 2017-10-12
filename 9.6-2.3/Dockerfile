@@ -14,7 +14,3 @@ RUN apt-get update \
 
 RUN mkdir -p /docker-entrypoint-initdb.d
 COPY ./init-test-db.sh /docker-entrypoint-initdb.d/init-test-db.sh
-
-
-FROM postgres:9.6
-MAINTAINER Mike Dillon <mike@appropriate.io>
